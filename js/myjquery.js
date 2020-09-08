@@ -64,7 +64,7 @@
 
 
     // 메인슬라이드 : 슬릭슬라이더 연결
-    $('.slide-inner').slick({
+    $('.section').slick({
         autoplay:true,
         dots:true,
         autoplaySpeed:4500,

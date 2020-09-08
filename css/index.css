@@ -67,6 +67,13 @@ body, html, #wrap {
     /* background:#f0a728 */
     
 }
+/* 애니메이션연결 */
+.section-outer .bginner.slick-active .text h2 { 
+    animation:bounceInDown 1s both 0.5s
+}
+.section-outer .bginner.slick-active .text1 p { 
+    animation:bounceInUp 1s both 1s
+}
 .bginner .text {
    
     
@@ -104,6 +111,7 @@ body, html, #wrap {
 /* aboutme */
 .section-outer .section:nth-child(2) {
     background: #14121c;
+    padding-left: 150px;
 }
 .introdu {
     position: relative;  
@@ -117,7 +125,7 @@ body, html, #wrap {
 }
 .introdu .text p {
     width: 100%;
-    font-size: 25px;
+    font-size: 23px;
     padding-top: 250px;
     margin-left: 100px;
     color: #fff;
@@ -129,9 +137,8 @@ body, html, #wrap {
 .introdu .photo {
     display: inline-block;
     width: 400px; height: 400px;
-    background: #b89d29;
+    background: #bfc225;
     background-image: url(../img/olivelogo.png);
-
     border-radius: 50%;
     border: 10px solid #fff;
     position: absolute; top: 60%; left: 67%;
@@ -149,25 +156,31 @@ body, html, #wrap {
 
 
 
-
-
-
-
-
 /* portfolios */
 .section-outer .section:nth-child(3) {
     background: #f0a728;
+    padding-top: 200px;
+    padding-left: 350px;
 }
+.portfolio, ul.gallery { height:100%;  }    
+.portfolio ul.gallery li { float:left; 
+    width:25%; height:47%; overflow:hidden;
+    padding:10px 10px 0px; margin-bottom:10px }
+
+
+
+
 
 /* skills */
 .section-outer .section:nth-child(4) {
     background: #14121c;
     padding-top: 150px;
+    padding-left: 300px;
 }
 .skillContainer {
     height: 100%;
     text-align: center;
-    
+   
 }
 .skillContainer p {
     font-size: 23px;
