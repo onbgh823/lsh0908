@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+@media screen and (max-width:900px) {
+    #header .nav .depth1 > li > a {
+        font-size:  18px; color: #fff;
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #header.on {
+        position: relative;
+        height: 170px;
+        /* height: auto; */
+        background:rgba(1, 1, 1, 0.7);
+    }
+    #header.on h1 {
+        padding-top: 45px;
+        text-align: center;
+    }
+    #header.on .open-gnb {
+        display: block;
+        position: absolute;
+        top: 50%; left: 15px; 
+        width: 25px; height: 17px;
+        transform: translateY(-50%);
+    }
+    #header.on .open-gnb span {
+        display: block;
+        width: 30px; height: 5px;
+        background-color: olive;
+        margin-bottom: 6px;
+        border-radius: 10px;
+    }
+    #header.on .nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100%; right: 0;
+        text-align: center;
+        transform: translateY(0%);
+        background: rgba(1, 1, 1, 0.9);
+    }
+    #header.on .nav .depth1 > li {
+        display: block;
+        float: left; width: 50%;
+    }
+    #header.on .nav .depth1 > li > a {
+        font-size: 18px; color: olive;
+        padding: 20px 20px;
+        display: block;
+        border: 1px solid olive;
+        font-family: 'Rowdies', cursive;
+    }
+    #header.on .nav .depth1 > li:nth-child(1) > a,
+    #header.on .nav .depth1 > li:nth-child(2) > a {
+        border-bottom: none;
+    }
+    #header.on .nav .depth1 > li:nth-child(1) > a,
+    #header.on .nav .depth1 > li:nth-child(3) > a {
+        border-right: none;
+    }
+   
+}

@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+body, html, #wrap {
+    height: 100%;
+}
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header-outer {
+    /* background: rgb(1, 1, 1,0.9); */
+    background: rgb(85, 77, 59);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+#header {
+    position: relative;
+    height: 140px;
+}
+#header .open-gnb {
+    display: none;
+}
+#header h1 {
+    padding-left: 30px;
+}
+#header h1 > a > img {
+    width: 15%;
+}
+/* 메뉴 */
+#header .nav {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+#header .nav .depth1 > li {
+    display: inline-block;
+}
+#header .nav .depth1 > li > a {
+    font-size: 22px; color: #fff;
+    padding: 0 40px;
+    font-family: 'Rowdies', cursive;
+}
+
+#header .nav .depth1 > li.on > a {
+    /* display: inline-block; */
+    font-size: 26px;
+    text-decoration: overline;
+    color: #f0a728;
+}
+
+
+
+/* 배경 */
+.section-outer { height:100%;}
+.section-outer .section {
+    height:100%;
+    background-size:cover; background-repeat:no-repeat;
+    background-position:center;
+}
+/* intro */
+.section-outer .section:nth-child(1) {
+    background-image: url(../img/glass-1149192_1920.jpg);
+    /* background:#f0a728 */
+}
+.bginner .text h2 {
+    width: 50%;
+    font-size: 40px;
+    padding-top: 400px;
+    margin-left: 300px;
+    color: #fff;
+    /* border: 1px solid white; */
+    /* text-align: center; */
+    text-shadow: 3px 3px 3px #000;
+}
+.bginner .text h2 span {
+    /* color: #24e394; */
+    color: #f92672;
+}
+.bginner .text1 p {
+    width: 50%;
+    font-size: 40px;
+    padding-top: 150px;
+    margin-left: 700px;
+    color: #fff;
+    /* border: 1px solid white; */
+    text-align: center;
+    text-shadow: 3px 3px 3px #000;
+}
+.bginner .text p span {
+    color: #24e394;
+}
+/* aboutme */
+.section-outer .section:nth-child(2) {
+    background: #14121c;
+}
+.introdu .text p {
+    width: 50%;
+    font-size: 20px;
+    padding-top: 250px;
+    margin-left: 100px;
+    color: #fff;
+    /* border: 1px solid white; */
+    
+}
+.introdu .text p span {
+    color: #24e394;
+}
+/* portfolios */
+.section-outer .section:nth-child(3) {
+    background: #f0a728;
+}
+
+/* skills */
+.section-outer .section:nth-child(4) {
+    background: #14121c;
+    padding-top: 150px;
+}
+.skillContainer {
+    height: 100%;
+    text-align: center;
+    
+}
+.skillContainer p {
+    font-size: 23px;
+    font-weight: bolder;
+    color: #f0a728;
+    /* text-shadow: 5px 5px 5px #000; */
+}
+/* .skillContainer .ai p {color: #ff9a00;}
+.skillContainer .ps p {color: #36c3f1;}
+.skillContainer .pr p {color: #ea77ff;}
+.skillContainer .html p {color: #d73a14;}
+.skillContainer .css p {color: #0170ba;}
+.skillContainer .js p {color: #f7df1e;}
+.skillContainer .jq p {color: #0868ab;} */
+
+.skillContainer > div {
+    display: inline-block;
+    height: 80%;
+    width: 13%;
+    /* 빈틈때문에 */
+    /* border: 1px solid slateblue; */
+    animation: bounceInUp 1s both;
+    
+}
+.skillContainer .score {
+    display: inline-block;
+    height: 100%;
+    /* 부모의 80퍼와 같은 높이 */
+    width: 50%;
+    /* background: rgb(95, 37, 10); */
+    opacity: 1;
+    position: relative;
+    border-radius: 10px;
+}
+.skillContainer .myscore {
+    height: 0%;
+    width: 100%;
+    position: absolute ;
+    bottom: 0; left: 0;
+    font-size: 20px;
+    padding-top: 10px;
+    /* background: yellowgreen; */
+    opacity: 0;
+    color: #14121c;
+    
+}
+
+.skillContainer .ai .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:aiscoree 1s both 0.5s,
+    /* 딜레이시간 마지막 */
+    bounceInUp 1s both ;
+    
+}
+.skillContainer .ps .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:psscoree 1.5s both 1s,
+    /* 딜레이시간 마지막 */
+    bounceInUp 1s both ;
+    
+}
+.skillContainer .pr .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:prscoree 2s both 1.5s,
+    /* 딜레이시간 마지막 */
+    bounceInUp 1s both ;
+    
+}
+.skillContainer .html .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:htmlscoree 2.5s both 2s,
+    /* 딜레이시간 마지막 */
+    bounceInUp 1s both ;
+    
+}
+.skillContainer .css .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:cssscoree 3s both 2.5s;
+    
+}
+.skillContainer .js .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:jsscoree 3.5s both 3s;
+    
+}
+.skillContainer .jq .myscore {
+    border-radius: 20px;
+    background:  #f0a728;
+    animation:jqscoree 4s both 3.5s;
+    
+}
+
+@keyframes aiscoree {
+    0% {height: 0%; }
+    
+    100% {height: 30%;
+    opacity: 1; }
+}
+@keyframes psscoree {
+    0% {height: 0%; }
+    
+    100% {height: 60%;
+    opacity: 1; }
+}
+@keyframes prscoree {
+    0% {height: 0%; }
+    
+    100% {height: 70%;
+    opacity: 1; }
+}
+@keyframes htmlscoree {
+    0% {height: 0%; }
+    
+    100% {height: 60%;
+    opacity: 1; }
+}
+@keyframes cssscoree {
+    0% {height: 0%;}
+    100% {height: 50%;
+    opacity: 1;}
+}
+@keyframes jsscoree {
+    0% {height: 0%;}
+    100% {height: 30%;
+    opacity: 1;}
+}
+@keyframes jqscoree {
+    0% {height: 0%;}
+    100% {height: 30%;
+    opacity: 1;}
+}
+
+@keyframes bounceInUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(-70%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+/* contactme */
+.section-outer .section:nth-child(5) {
+    background-image:url(../img/rene-bottom.jpg);
+}
