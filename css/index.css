@@ -63,52 +63,97 @@ body, html, #wrap {
 }
 /* intro */
 .section-outer .section:nth-child(1) {
-    background-image: url(../img/glass-1149192_1920.jpg);
+    background-image: url(../img/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg);
     /* background:#f0a728 */
+    
+}
+.bginner .text {
+   
+    
 }
 .bginner .text h2 {
-    width: 50%;
-    font-size: 40px;
-    padding-top: 400px;
-    margin-left: 300px;
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 220px;
+    padding-left: 30px;
+    margin-left: 600px;
     color: #fff;
     /* border: 1px solid white; */
-    /* text-align: center; */
     text-shadow: 3px 3px 3px #000;
 }
 .bginner .text h2 span {
     /* color: #24e394; */
-    color: #f92672;
+    color: #24e394;
 }
 .bginner .text1 p {
-    width: 50%;
-    font-size: 40px;
-    padding-top: 150px;
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 200px;
     margin-left: 700px;
     color: #fff;
     /* border: 1px solid white; */
-    text-align: center;
     text-shadow: 3px 3px 3px #000;
+    text-align: center;
 }
 .bginner .text p span {
     color: #24e394;
 }
+
+
+
 /* aboutme */
 .section-outer .section:nth-child(2) {
     background: #14121c;
 }
+.introdu {
+    position: relative;  
+}
+.introdu .text {
+    display: block;
+    /* border: 1px solid red; */
+    width: 45%;
+    float: left;
+    margin-left: 50px;
+}
 .introdu .text p {
-    width: 50%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 25px;
     padding-top: 250px;
     margin-left: 100px;
     color: #fff;
-    /* border: 1px solid white; */
-    
+    /* border: 1px solid white; */   
 }
 .introdu .text p span {
     color: #24e394;
 }
+.introdu .photo {
+    display: inline-block;
+    width: 400px; height: 400px;
+    background: #b89d29;
+    background-image: url(../img/olivelogo.png);
+
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute; top: 60%; left: 67%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-size:cover; background-repeat:no-repeat;
+    background-position:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* portfolios */
 .section-outer .section:nth-child(3) {
     background: #f0a728;
